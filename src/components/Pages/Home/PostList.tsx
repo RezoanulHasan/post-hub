@@ -68,7 +68,7 @@ const PostList: React.FC = () => {
       <div className="flex flex-col md:flex-row md:justify-between mb-6">
         <input
           type="text"
-          placeholder="Search posts..."
+          placeholder="Search posts by title..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="border border-gray-300 rounded-md p-3 mb-4 md:mb-0 w-full md:w-1/2 lg:w-1/3 focus:outline-none focus:ring-2 focus:ring-teal-500 transition"

@@ -6,7 +6,7 @@ interface PostPageProps {
   };
 }
 
-const PostPage = async ({ params }: PostPageProps) => {
+const SinglePostPage = async ({ params }: PostPageProps) => {
   const { id } = params;
 
   let post: Post | null = null;
@@ -59,10 +59,12 @@ const PostPage = async ({ params }: PostPageProps) => {
             {post.userId}
           </div>
 
-          <h1 className="text-3xl font-extrabold text-teal-800 mb-4">
-            {post.title}
+          <h1 className="text-2xl font-extrabold text-teal-800 mb-4">
+            Title: {post.title}
           </h1>
-          <p className="text-gray-800 text-lg leading-relaxed">{post.body}</p>
+          <p className="text-gray-800 text-lg leading-relaxed">
+            Description: {post.body}
+          </p>
         </div>
       </div>
       <div className=" text-center  mt-40">
@@ -77,4 +79,4 @@ const PostPage = async ({ params }: PostPageProps) => {
   );
 };
 
-export default PostPage;
+export default SinglePostPage;
