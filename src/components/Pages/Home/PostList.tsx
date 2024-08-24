@@ -14,9 +14,7 @@ const PostList: React.FC = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts"
-      );
+      const response = await fetch("/api/posts");
       const data = await response.json();
       setPosts(data);
     };

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-children-prop */
 "use client";
 import Banner from "@/components/Pages/Home/Banner";
 import PostList from "@/components/Pages/Home/PostList";
